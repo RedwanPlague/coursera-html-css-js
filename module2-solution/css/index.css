@@ -3,12 +3,13 @@
 }
 
 body {
-	background-color: grey;
+	background-color: #ffff99;
 	font-family: "Times New Roman", Times, serif; 
+	font-size: 110%;
 }
 
 h1 {
-	color: white;
+	color: black;
 	text-align: center;
 	font-size: 175%;
 	font-family: Arial;
@@ -19,27 +20,27 @@ h1 {
 }
 
 .sub-div {
-	background-color: #333333;
 	border: 1px solid black;
 	margin: 10px;
-	overflow: auto;	
 }
 
 .sub-div > h2 {
-	background-color: silver;
 	font-size: 125%;
 	font-family: Arial;
-	color: black;
 	margin: 0px;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 40px;
+	padding-right: 40px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	float: right;
+	border: 1px solid black;
+	position: relative;
+	top: -1px;
+	right: -1px;
 }
 
 .sub-div > p {
-	color: white;
+	color: black;
 	text-align: justify;
 	margin: 0px;
 	padding-top: 10px;
@@ -48,6 +49,33 @@ h1 {
 	margin-left: auto;
 	margin-right: auto;
 	clear: right;
+}
+
+#fire h2 {
+	background-color: red;
+	color: white;
+}
+
+#fire {
+	background-color: #ffbbbb;
+}
+
+#water h2 {
+	background-color: blue;
+	color: white;
+}
+
+#water {
+	background-color: lightblue;
+}
+
+#grass h2 {
+	background-color: green;
+	color: white;
+}
+
+#grass {
+	background-color: lightgreen;
 }
 
 @media (min-width: 992px) {
