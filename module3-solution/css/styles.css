@@ -1,0 +1,57 @@
+body {
+	box-sizing: border-box;
+	font-family: Arial;
+	background-color: #fee;
+}
+
+#bs-navbar-collapse-1 {
+	border-top: 1px solid black;
+}
+
+#options {
+	border: 1px solid black;
+}
+
+.icon-bar {
+	border: 2px solid black;
+}
+
+hr {
+	border-top: 1px solid black;
+	margin: 0;
+}
+
+header {
+	font-size: 1.5em;
+}
+
+#topbar {
+	background-color: #cdc;
+	border-bottom: 1px solid black;
+}
+
+#topbar .navbar-brand {
+	font-size: 1.8em;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: #000;
+}
+
+.navbar-nav {
+	margin: 0;	
+	padding: 0;
+}
+
+#dummy-row {
+	margin: 5px;
+}
+
+#dummy {
+	background-color: #ccd;
+	margin-top: 30px;
+	border: 1px solid black;
+}
+
+#dummy p {
+	font-size: 120%;
+}
