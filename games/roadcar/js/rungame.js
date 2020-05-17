@@ -17,6 +17,8 @@ document.querySelector("header button").onclick = function() {
 	this.style.position = "absolute";
 	this.style.top = "-100vh";
 	document.getElementById("score-div").style.position = "static";
+	document.addEventListener('touchstart', handleTouchStart, false);
+	document.addEventListener('touchmove', handleTouchMove, false);
 	document.onkeydown = checkKey;
 
 	var blockDivs = document.querySelectorAll("#road div");
@@ -47,6 +49,9 @@ document.querySelector("header button").onclick = function() {
 				car.setLeft(100);
 			}
 			if (crash(myCar, car)) {
+				done = true;
+				document.addEventListener('touchstart', null, false);
+				document.addEventListener('touchmove', null, false);
 				document.onkeydown = null;
 				clearInterval(runner);
 				myCar.style.background = "url(images/cute.gif)";
