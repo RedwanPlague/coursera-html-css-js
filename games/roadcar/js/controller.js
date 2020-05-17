@@ -1,26 +1,30 @@
-var myCar = new Car("mycar", "2vh", "1%");
+var myCar = new Car(document.getElementById("mycar"), "2vh", "0%");
+var score = document.getElementById("score");
+var done = false;
 
-document.onkeydown = function(e) {
+function checkKey(e) {
 
 	e = e || window.event;
 
 	if (e.keyCode == '38') {
-		myCar.goup();
+		myCar.goUp();
 	}
 	else if (e.keyCode == '40') {
-		myCar.godown();
+		myCar.goDown();
 	}
 	else if (e.keyCode == '37') {
-		myCar.goleft();
+		myCar.goLeft();
+		score.textContent = myCar.getLeft();
 	}
 	else if (e.keyCode == '39') {
-		myCar.goright();
+		myCar.goRight();
+		score.textContent = myCar.getLeft();
+		if (myCar.getLeft() == 90) {
+			done = true;
+			document.onkeydown = null;
+			score.textContent = "You win!";
+			score.style.color = "green";
+		}
 	}
-	// else if (e.keyCode == '35') {
-	// mycar.gohome();
-	// }
-	// else if (e.keyCode == '36') {
-	// mycar.goend();
-	// }
 
-};
+}
