@@ -1,12 +1,12 @@
 var roadHTML = "";
-	var blockCount = 11;
+var blockCount = 11;
 for (var i = 0; i < blockCount; i++) {
 	roadHTML += "<div></div>";
 }
 document.getElementById("road").innerHTML = roadHTML;
 
 function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+	return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
 }
 
 function crash(myCar, car) {
@@ -27,7 +27,7 @@ document.querySelector("header button").onclick = function() {
 	blockDivs.forEach(function(item, index) {
 		// item.innerHTML = "<h2 style=\"text-align: center;\">" + index + "</h2>";
 		var car = new Car(
-			item, 
+			item,
 			2 + getRandomInt(0,5) * 16 + "vh",
 			21 + index * 10 + "%"
 		);
