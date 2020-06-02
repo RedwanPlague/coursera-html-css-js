@@ -1,98 +1,98 @@
 body {
-	box-sizing: border-box;
-	background-color: #000;
-	margin: 0;
-	height: 100vh;
-	overflow: hidden;
+    box-sizing: border-box;
+    background-color: #000;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
 }
 
 header {
-	background-color: #aaa;
-	padding: 1vh;
+    background-color: #aaa;
+    padding: 1vh;
 }
 
 #game-name {
-	font-weight: bold;
-	font-size: 5vh;
-	text-align: center;
+    font-weight: bold;
+    font-size: 5vh;
+    text-align: center;
 }
 
 #score-div {
-	width: 80%;
-	font-size: 6vh;
-	position: absolute;
-	top: -100vh;
+    width: 80%;
+    font-size: 6vh;
+    position: absolute;
+    top: -100vh;
 }
 
 header button {
-	font-size: 5vh;
-	padding: 0.5vh 1%;
-	background-color: #bbb;
+    font-size: 5vh;
+    padding: 0.5vh 1%;
+    background-color: #bbb;
 }
 
 @media (max-height: 450px) {
-	header {
-		padding: 0;
-		padding-left: 10px;
-	}
-	#game-name {
-		position: absolute;
-		top: -100vh;
-	}
-	#score-div {
-		font-size: 10vh;
-	}
-	header button {
-		font-size: 7vh;
-	}
+    header {
+        padding: 0;
+        padding-left: 10px;
+    }
+    #game-name {
+        position: absolute;
+        top: -100vh;
+    }
+    #score-div {
+        font-size: 10vh;
+    }
+    header button {
+        font-size: 7vh;
+    }
 }
 
 @media (max-height: 200px) {
-	#score-div {
-		font-size: 15vh;
-	}
-	header button {
-		font-size: 12vh;
-	}
+    #score-div {
+        font-size: 15vh;
+    }
+    header button {
+        font-size: 12vh;
+    }
 }
 
 #game hr {
-	border: 0;
-	border-top: 1vh dashed white;
-	margin-top: 15vh;
+    border: 0;
+    border-top: 1vh dashed white;
+    margin-top: 15vh;
 }
 
 #game {
-	height: 79vh;
-	background-color: #555;
-	border-top: 1vh solid red;
-	border-bottom: 1vh solid red;
-	position: relative;
-	top: 0;
-	left: 0;
-	overflow: hidden;
+    height: 79vh;
+    background-color: #555;
+    border-top: 1vh solid red;
+    border-bottom: 1vh solid red;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
 }
 
 #finish {
-	height: 79vh;
-	width: 1%;
-	position: absolute;
-	top: 0;
-	right: 0;
-	background-color: #00f;
+    height: 79vh;
+    width: 1%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #00f;
 }
 
 #mycar {
-	width: 9%;
-	height: 11vh;
-	background-color: #ff0;
-	position: absolute;
+    width: 9%;
+    height: 11vh;
+    background-color: #ff0;
+    position: absolute;
 }
 
 #road div {
-	width: 9%;
-	height: 11vh;
-	background-color: #0f0;
-	position: absolute;
-	top: -100vh;
+    width: 9%;
+    height: 11vh;
+    background-color: #0f0;
+    position: absolute;
+    top: -100vh;
 }
