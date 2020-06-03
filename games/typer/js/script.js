@@ -2,26 +2,23 @@ document.addEventListener('DOMContentLoaded', () => {
     'use strict';
 
     function randomNumber(min, max) {
-        return Math.round( Math.random() * (max - min) ) + min;
+        return Math.floor( Math.random() * (max - min) ) + min;
     }
 
     const charList = 'abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWZYZ`1234567890-=[]\\;\',./~!@#$%^&*()_+{}|:"<>?'.split('');
     var toWrite, typedCorrectly;
+    const textFileCount = 8;
     readTextFile();
     var cursorPos = 0;
     var wrongKeyStrokes = 0, correctKeyStrokes = 0, startTime, endTime;
 
-    function readTextFile()
-    {
+    function readTextFile() {
         var rawFile = new XMLHttpRequest();
-        const file = './texts/text' + randomNumber(0,5) + '.txt';
+        const file = './data/text' + randomNumber(0,textFileCount) + '.txt';
         rawFile.open('GET', file, true);
-        rawFile.onreadystatechange = function ()
-        {
-            if(rawFile.readyState === 4)
-            {
-                if(rawFile.status === 200 || rawFile.status == 0)
-                {
+        rawFile.onreadystatechange = function () {
+            if(rawFile.readyState === 4) {
+                if(rawFile.status === 200 || rawFile.status == 0) {
                     toWrite = rawFile.responseText.slice(0,-1);
                     typedCorrectly = new Array(toWrite.length).fill(true);
                     const button = document.getElementById('start-button');
@@ -58,6 +55,11 @@ document.addEventListener('DOMContentLoaded', () => {
         result += 'Accuracy: ' + effectiveAccuracy.toFixed(2) + '%<br>';
         result += 'Effective Speed: ' + effectiveWPM.toFixed(2) + ' wpm';
         document.getElementById('results').innerHTML = result;
+        const reloadButton = document.getElementById('reload');
+        reloadButton.onclick = function() {
+            location.reload();
+        }
+        reloadButton.style.opacity = '1';
     }
 
     function typeStart() {
