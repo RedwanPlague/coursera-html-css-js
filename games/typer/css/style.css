@@ -26,6 +26,10 @@ body {
     text-align: center;
 }
 
+#results sup {
+    font-size: 0.5em;
+}
+
 #reload-div {
     text-align: center;
 }

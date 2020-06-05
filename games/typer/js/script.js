@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const charList = 'abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWZYZ`1234567890-=[]\\;\',./~!@#$%^&*()_+{}|:"<>?'.split('');
     var toWrite, typedCorrectly;
-    const textFileCount = 8;
+    const textFileCount = 20;
     readTextFile();
     var cursorPos = 0;
-    var wrongKeyStrokes = 0, correctKeyStrokes = 0, startTime, endTime;
+    var wrongTypedChars = 0, correctTypedChars = 0, startTime, endTime;
 
     function readTextFile() {
         var rawFile = new XMLHttpRequest();
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     button.onclick = onButtonPress;
                 }
             }
-        }
+        };
         rawFile.send(null);
     }
 
@@ -44,21 +44,24 @@ document.addEventListener('DOMContentLoaded', () => {
     function showScore() {
         endTime = new Date();
         const minutesNeeded = (endTime - startTime) / 60000;
-        const totalTypedChars = correctKeyStrokes + wrongKeyStrokes;
-        const totalWords = totalTypedChars / 5;
-        const wpm = totalWords / minutesNeeded;
-        const accuracy = 100 * correctKeyStrokes / totalTypedChars;
-        const gotRight = typedCorrectly.reduce((a,b) => a+b, 0);
-        const effectiveAccuracy = accuracy * gotRight / toWrite.length;
-        const effectiveWPM = wpm * effectiveAccuracy / 100;
+
+        const gotRightChars = typedCorrectly.reduce((a,b) => a+b, 0);
+        const gotRightWords = gotRightChars / 5;
+        const wpm = gotRightWords / minutesNeeded;
+
+        const totalTypedChars = correctTypedChars + wrongTypedChars;
+        const typingAccuracy = 100 * correctTypedChars / totalTypedChars;
+        const completionAccuracy = 100 * gotRightChars / toWrite.length;
+
         var result = 'Speed: ' + wpm.toFixed(2) + ' wpm<br>';
-        result += 'Accuracy: ' + effectiveAccuracy.toFixed(2) + '%<br>';
-        result += 'Effective Speed: ' + effectiveWPM.toFixed(2) + ' wpm';
+        result += 'Typing Accuracy: ' + typingAccuracy.toFixed(2) + '%<sup>(Characters you typed right)</sup><br>';
+        result += 'Completion Accuracy: ' + completionAccuracy.toFixed(2) + '%<sup>(Characters you finally got right)</sup>';
         document.getElementById('results').innerHTML = result;
+
         const reloadButton = document.getElementById('reload');
         reloadButton.onclick = function() {
             location.reload();
-        }
+        };
         reloadButton.style.opacity = '1';
     }
 
@@ -76,14 +79,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 if(cursorPos < toWrite.length) {
                     setBackground(cursorPos+1, 'green');
                     cursorPos++;
-                    correctKeyStrokes++;
+                    correctTypedChars++;
                 }
             }
             else if(charList.includes(key)) {
                 if(cursorPos < toWrite.length) {
                     setBackground(cursorPos+1, 'red');
                     typedCorrectly[cursorPos] = false;
-                    wrongKeyStrokes++;
+                    wrongTypedChars++;
                     cursorPos++;
                 }
             }
@@ -97,7 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
             else if(key == 'Enter') {
                 if(cursorPos == toWrite.length) {
                     cursorPos++;
-                    correctKeyStrokes++;
                     document.querySelector('#type-area #enter').style['background-color'] = 'green';
                     showScore();
                 }
