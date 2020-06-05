@@ -1,12 +1,13 @@
 body {
     box-sizing: border-box;
-    background-color: gray;
+    background-color: grey;
 }
 
 #start-button {
     font-size: 1.5em;
-    background-color: lightblue;
+    background-color: silver;
     opacity: 0;
+    cursor: pointer;
 }
 
 #time-shower {
@@ -19,6 +20,9 @@ body {
 
 #type-area {
     font-size: 2em;
+    border: 2px solid black;
+    padding: 5px;
+    opacity: 0;
 }
 
 #results {
@@ -36,7 +40,8 @@ body {
 
 #reload {
     font-size: 1.7em;
-    background-color: lightblue;
+    background-color: silver;
     opacity: 0;
     margin: 10px;
+    cursor: pointer;
 }

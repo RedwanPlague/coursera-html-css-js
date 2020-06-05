@@ -71,13 +71,15 @@ document.addEventListener('DOMContentLoaded', () => {
             spanToAdd += '<span>' + toWrite.charAt(i) + '</span>';
         }
         spanToAdd += '<span id="enter">[Enter]</span>';
-        document.getElementById('type-area').innerHTML = spanToAdd;
+        const type_area = document.getElementById('type-area');
+        type_area.innerHTML = spanToAdd;
+        type_area.style.opacity = '1';
         startTime = new Date();
         document.addEventListener('keydown', event => {
             const key = event.key;
             if(key === toWrite.charAt(cursorPos)) {
                 if(cursorPos < toWrite.length) {
-                    setBackground(cursorPos+1, 'green');
+                    setBackground(cursorPos+1, 'limegreen');
                     cursorPos++;
                     correctTypedChars++;
                 }
@@ -100,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
             else if(key == 'Enter') {
                 if(cursorPos == toWrite.length) {
                     cursorPos++;
-                    document.querySelector('#type-area #enter').style['background-color'] = 'green';
+                    document.querySelector('#type-area #enter').style['background-color'] = 'limegreen';
                     showScore();
                 }
             }
