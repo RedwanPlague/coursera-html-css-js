@@ -1,0 +1,258 @@
+[
+  {
+    "value": "Bagerhat",
+    "text": "Bagerhat(বাগেরহাট)"
+  },
+  {
+    "value": "Bandarban",
+    "text": "Bandarban(বান্দরবান)"
+  },
+  {
+    "value": "Barguna",
+    "text": "Barguna(বরগুনা)"
+  },
+  {
+    "value": "Barisal",
+    "text": "Barisal(বরিশাল)"
+  },
+  {
+    "value": "Bhola",
+    "text": "Bhola(ভোলা)"
+  },
+  {
+    "value": "Bogura",
+    "text": "Bogura(বগুড়া)"
+  },
+  {
+    "value": "Brahmanbaria",
+    "text": "Brahmanbaria(ব্রাহ্মণবাড়িয়া)"
+  },
+  {
+    "value": "Chandpur",
+    "text": "Chandpur(চাঁদপুর)"
+  },
+  {
+    "value": "Chapainawabganj",
+    "text": "Chapainawabganj(চাঁপাইনবাবগঞ্জ)"
+  },
+  {
+    "value": "Chattogram",
+    "text": "Chattogram(চট্টগ্রাম)"
+  },
+  {
+    "value": "Chuadanga",
+    "text": "Chuadanga(চুয়াডাঙ্গা)"
+  },
+  {
+    "value": "Comilla",
+    "text": "Comilla(কুমিল্লা)"
+  },
+  {
+    "value": "Coxsbazar",
+    "text": "Coxsbazar(কক্সবাজার)"
+  },
+  {
+    "value": "Dhaka",
+    "text": "Dhaka(ঢাকা)"
+  },
+  {
+    "value": "Dinajpur",
+    "text": "Dinajpur(দিনাজপুর)"
+  },
+  {
+    "value": "Faridpur",
+    "text": "Faridpur(ফরিদপুর)"
+  },
+  {
+    "value": "Feni",
+    "text": "Feni(ফেনী)"
+  },
+  {
+    "value": "Gaibandha",
+    "text": "Gaibandha(গাইবান্ধা)"
+  },
+  {
+    "value": "Gazipur",
+    "text": "Gazipur(গাজীপুর)"
+  },
+  {
+    "value": "Gopalganj",
+    "text": "Gopalganj(গোপালগঞ্জ)"
+  },
+  {
+    "value": "Habiganj",
+    "text": "Habiganj(হবিগঞ্জ)"
+  },
+  {
+    "value": "Jamalpur",
+    "text": "Jamalpur(জামালপুর)"
+  },
+  {
+    "value": "Jashore",
+    "text": "Jashore(যশোর)"
+  },
+  {
+    "value": "Jhalakathi",
+    "text": "Jhalakathi(ঝালকাঠি)"
+  },
+  {
+    "value": "Jhenaidah",
+    "text": "Jhenaidah(ঝিনাইদহ)"
+  },
+  {
+    "value": "Joypurhat",
+    "text": "Joypurhat(জয়পুরহাট)"
+  },
+  {
+    "value": "Khagrachhari",
+    "text": "Khagrachhari(খাগড়াছড়ি)"
+  },
+  {
+    "value": "Khulna",
+    "text": "Khulna(খুলনা)"
+  },
+  {
+    "value": "Kishoreganj",
+    "text": "Kishoreganj(কিশোরগঞ্জ)"
+  },
+  {
+    "value": "Kurigram",
+    "text": "Kurigram(কুড়িগ্রাম)"
+  },
+  {
+    "value": "Kushtia",
+    "text": "Kushtia(কুষ্টিয়া)"
+  },
+  {
+    "value": "Lakshmipur",
+    "text": "Lakshmipur(লক্ষ্মীপুর)"
+  },
+  {
+    "value": "Lalmonirhat",
+    "text": "Lalmonirhat(লালমনিরহাট)"
+  },
+  {
+    "value": "Madaripur",
+    "text": "Madaripur(মাদারীপুর)"
+  },
+  {
+    "value": "Magura",
+    "text": "Magura(মাগুরা)"
+  },
+  {
+    "value": "Manikganj",
+    "text": "Manikganj(মানিকগঞ্জ)"
+  },
+  {
+    "value": "Meherpur",
+    "text": "Meherpur(মেহেরপুর)"
+  },
+  {
+    "value": "Moulvibazar",
+    "text": "Moulvibazar(মৌলভীবাজার)"
+  },
+  {
+    "value": "Munshiganj",
+    "text": "Munshiganj(মুন্সিগঞ্জ)"
+  },
+  {
+    "value": "Mymensingh",
+    "text": "Mymensingh(ময়মনসিংহ)"
+  },
+  {
+    "value": "Naogaon",
+    "text": "Naogaon(নওগাঁ)"
+  },
+  {
+    "value": "Narail",
+    "text": "Narail(নড়াইল)"
+  },
+  {
+    "value": "Narayanganj",
+    "text": "Narayanganj(নারায়ণগঞ্জ)"
+  },
+  {
+    "value": "Narsingdi",
+    "text": "Narsingdi(নরসিংদী)"
+  },
+  {
+    "value": "Natore",
+    "text": "Natore(নাটোর)"
+  },
+  {
+    "value": "Netrokona",
+    "text": "Netrokona(নেত্রকোণা)"
+  },
+  {
+    "value": "Nilphamari",
+    "text": "Nilphamari(নীলফামারী)"
+  },
+  {
+    "value": "Noakhali",
+    "text": "Noakhali(নোয়াখালী)"
+  },
+  {
+    "value": "Pabna",
+    "text": "Pabna(পাবনা)"
+  },
+  {
+    "value": "Panchagarh",
+    "text": "Panchagarh(পঞ্চগড়)"
+  },
+  {
+    "value": "Patuakhali",
+    "text": "Patuakhali(পটুয়াখালী)"
+  },
+  {
+    "value": "Pirojpur",
+    "text": "Pirojpur(পিরোজপুর)"
+  },
+  {
+    "value": "Rajbari",
+    "text": "Rajbari(রাজবাড়ী)"
+  },
+  {
+    "value": "Rajshahi",
+    "text": "Rajshahi(রাজশাহী)"
+  },
+  {
+    "value": "Rangamati",
+    "text": "Rangamati(রাঙ্গামাটি)"
+  },
+  {
+    "value": "Rangpur",
+    "text": "Rangpur(রংপুর)"
+  },
+  {
+    "value": "Satkhira",
+    "text": "Satkhira(সাতক্ষীরা)"
+  },
+  {
+    "value": "Shariatpur",
+    "text": "Shariatpur(শরীয়তপুর)"
+  },
+  {
+    "value": "Sherpur",
+    "text": "Sherpur(শেরপুর)"
+  },
+  {
+    "value": "Sirajganj",
+    "text": "Sirajganj(সিরাজগঞ্জ)"
+  },
+  {
+    "value": "Sunamganj",
+    "text": "Sunamganj(সুনামগঞ্জ)"
+  },
+  {
+    "value": "Sylhet",
+    "text": "Sylhet(সিলেট)"
+  },
+  {
+    "value": "Tangail",
+    "text": "Tangail(টাঙ্গাইল)"
+  },
+  {
+    "value": "Thakurgaon",
+    "text": "Thakurgaon(ঠাকুরগাঁও)"
+  }
+]
